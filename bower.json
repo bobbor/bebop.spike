@@ -1,0 +1,31 @@
+{
+  "name": "Bebop.Spike",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bobbor/bebop.spike",
+  "authors": [
+    "Philipp Paul <me@philipp-paul.com>"
+  ],
+  "description": "Backbone View to use bebop instead of jQuery",
+  "main": "view.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "backbone",
+    "bebop",
+    "jqueryless",
+    "NojQuery"
+    "view"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "^1.2.1"
+  }
+}
