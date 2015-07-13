@@ -14,7 +14,7 @@
     "backbone",
     "bebop",
     "jqueryless",
-    "NojQuery"
+    "NojQuery",
     "view"
   ],
   "license": "MIT",
@@ -26,6 +26,7 @@
     "tests"
   ],
   "dependencies": {
-    "backbone": "^1.2.1"
+    "backbone": "^1.2.1",
+    "bebop": "https://github.com/bobbor/bebop.git#79039bb4c1"
   }
 }
