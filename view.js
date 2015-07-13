@@ -10,11 +10,11 @@
             // Also create a global in case some scripts
             // that are loaded still are looking for
             // a global even when an AMD loader is in use.
-            return (Backbone.View = factory(Backbone, _, bebop));
+            return (bebop.spike = factory(Backbone, _, bebop));
         });
     } else {
         // Browser globals
-        Backbone.View = factory(root.Backbone, root._, root.bebop);
+        bebop.spike = factory(root.Backbone, root._, root.bebop);
     }
 }(self, function (Backbone, _, $) {
     'use strict';
