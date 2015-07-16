@@ -27,17 +27,23 @@ just clone this repo or
 
 HTML
 
-```html
-<script src="bebop.spike/view.js"></script>
-```
+	<script src="bebop.spike/view.js"></script>
 
 or via amd
 
-```javascript
-define(['bebop.spike/view'], function(view) {
-  // logic here
-});
-```
+	define ['bebop.spike/view'], (view) ->
+	  // logic here
+
+since this is a Backbone.View, it can be used as you would expect
+
+	myView = bebop.spike.extend {
+		events: 
+			'click': 'onClick'
+		initialize: ->
+			# init here
+		onClick: (e) ->
+			# handle click
+	}
 
 ## Note
 
@@ -45,9 +51,8 @@ This exports an *alternative* Backbone.View and does **NOT** replace the origina
 
 If you want to do that, you have to do it your self.
 
-```javascript
-Backbone.View = bebop.spike;
-```
+	Backbone.View = bebop.spike;
+	
 
 [1]: http://www.github.com/bobbor/bebop
 [2]: https://github.com/jashkenas/backbone/wiki/Using-Backbone-without-jQuery
